@@ -21,7 +21,7 @@ public class UserController {
     public ResponseEntity<User> createUser(@RequestBody CreateUserDto dto){
         return ResponseEntity.ok(userService.createUser(dto));
     }
-
+//
     @PutMapping()
     public ResponseEntity<User> updateUser(@RequestBody UpdateUserDto dto) {
         return new ResponseEntity<>(userService.updateUser(dto), HttpStatus.OK);
